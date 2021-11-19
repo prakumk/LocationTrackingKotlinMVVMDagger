@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id "dagger.hilt.android.plugin"
 }
 
 android {
@@ -54,5 +55,12 @@ dependencies {
     implementation "androidx.room:room-ktx:$roomVersion"
     //-----------------------Room Dependencies Ends *********************
 
+    //Activity KTX for viewModels()
+    implementation("androidx.activity:activity-ktx:$activity_version")
+
+    //*********************** Dagger - Hilt -------------------------------
+    implementation("com.google.dagger:hilt-android:$dagger_hilt")
+    kapt("com.google.dagger:hilt-android-compiler:$dagger_hilt")
+    //------------------------ Dagger - Hilt Ends **************************
 
 }

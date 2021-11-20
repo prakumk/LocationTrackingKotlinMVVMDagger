@@ -1,8 +1,8 @@
-package com.softwares.wherearethey
+package com.softwares.wherearethey.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import com.softwares.wherearethey.R
 import com.softwares.wherearethey.db.RunDao
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
